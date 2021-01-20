@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apurva Kumar</title>
+
+    <script defer src="/__/firebase/8.2.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.2.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.2.3/firebase-performance.js"></script>
+    <link href="assets/img/icon.png" rel="icon">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style_hr.css" rel="stylesheet">
+    <link href="assets/css/scroll_to_top.css" rel="stylesheet">
+    <link href="assets/vendor/fontawesome_pro_v5.13/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/main_resume.css" rel="stylesheet">
+    <link href="assets/css/main_modal&slider.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Kalam&family=Itim&family=Dekko&family=Sriracha&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap" rel="stylesheet">
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    <header class="header-area overlay">
+      <nav class="navbar navbar-expand-md navbar-dark">
+		    <div class="container-fluid">
+          <a href="#"><div class="navbar-brand"><i class="far fa-home"></i>&nbsp;Home</div></a>
+          <a href="one.html"><div class="navbar-brand"><i class=""></i>&nbsp;Contact Form</div></a>
+          <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+            <span class="menu-icon-bar"></span>
+          </button>
+          <div id="main-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto" style='padding:20px;'>
+              <li><a href="#about" class="nav-item nav-link">About Me</a></li>
+              <li><a href="#education" class="nav-item nav-link">Education</a></li>
+              <li><a href="#skills" class="nav-item nav-link">Skills</a></li>
+              <li><a href="#hobbies" class="nav-item nav-link">Hobbies</a></li>
+              <li><a href="#contact" class="nav-item nav-link">Contact Me</a></li>
+            </ul>+
+			    </div>
+        </div>
+      </nav>
+      
+      <hr class="bookends">
+      <section id="home" class="home">
+		    <div class="container">
+          <h2><b><u>My Resume</u></b></h2>
+          <img id="profile_pic" src="assets/img/ok.png">
+          <h1><i id="angle" class="far fa-angle-left"></i>Apurva Kumar<i id="angle" class="far fa-angle-right"></i></h1>
+          <h3>Fresher at Web Development</h3>
+          <div class="social">
+            <a href="https://github.com/Luciferx00" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+            <a href="https://www.linkedin.com/in/apurva-kumar-gupta-4b640a1b8/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;
+          </div>
+		    </div>
+      </section>
+      <section class="about" id="about">
+        <hr class="bookends">
+        <i id="icon" class="far fa-address-card"></i>
+        <h1><b>About Me</b></h1>
+        <h3>
+         I am a fresher. I am pursuing my BE degree from CMRIT college,Bengaluru. I am currently in 3 rd year.My stream is CSE.
+			I am interested in full stack web development(MEAN). I have studied technologies related to it like MongoDB, NodeJS, ExpressJS, ReactJS.
+			I would like to study more frameworks related to full stack web development like ReactJS,AngularJS. I even know technolgies which make website development
+			easy like WIX,Wordpress.
+        </h3>
+        <i id="about_icon" class="far fa-hand-peace"></i><i id="about_icon" class="far fa-hand-peace"></i>
+      </section>
+      <section class="education" id="education">
+        <hr class="bookends">
+        <i id="icon" class="far fa-graduation-cap"></i>
+        <h1><b>Education</b></h1>
+        <div id="edu" class="row no-gutters">
+          <div class="col-md-1"></div>
+          <div class="col-md-5">
+            <i id="icon_edu" class="far fa-school"></i>
+            <h3><u><b>Air Force School,ASTE</b></u></h3><br>
+            <h5><b>Year:</b> 2003 - 2018</h5>
+            <h5><b>Stream:</b> CSE</h5>
+            <h5><b>CGPA:</b> 9.6/10</h5><br>
+            <h5><b><u>Extra Activities: </u></b></h5>
+            <h6>Captain Of Yellow House</h6>
+            <h6>Hosted The Farewell Party (2015)</h6>
+            <h6>Won Several Art,GD, Quizes</h6><br>
+          </div>
+          <div class="col-md-5">
+            <i id="icon_edu" class="far fa-university"></i>
+            <h3><u><b>CMRIT</b></u></h3><br>
+            <h5><b>Year:</b> 2018 - Present</h5>
+            <h5><b>Stream:</b> B.Tech (CSE)</h5>
+            <h5><b>CGPA:</b> 8/10</h5><br>
+            <h5><b><u>Extra Activities: </u></b></h5>
+            <h6>Technical Member at Innovation Club</h6>
+            <h6>Organized Events</h6>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </section>
+      <section id="skills" class="skills">
+        <hr class="bookends">
+        <i id="icon" class="far fa-brain"></i>
+        <h1><b>Skills</b></h1>
+        <div id="li_skills" class="row no-gutters">
+          <div class="col-sm-4">
+            <h2>Programming Languages:</h2><br>
+            <ul>
+              <li><i class="fab fa-html5"></i>&nbsp;HTML 5 </li>
+              <li><i class="fab fa-css3"></i>&nbsp;CSS 3 </li>
+              <li><i class="fas fa-code"></i>&nbsp;jQuery </li>
+              <li><i class="fab fa-js-square"></i>&nbsp;Java Script </li>
+              <li><i class="fab fa-bootstrap"></i>&nbsp;Bootstrap 4</li>
+              <li><i class="fas fa-database"></i></i>&nbsp;MongoDB</li>
+              <li><i class="fab fa-php"></i>&nbsp;PHP</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h2>Softwares:</h2><br>
+            <ul>
+              <li><i class="fab fa-android"></i>&nbsp;Visual Studio Code</li>
+              <li><i class="far fa-file-video"></i>&nbsp;Wondershare Filmora9</li>
+              <li><i class="far fa-desktop"></i>&nbsp;VMware Workstation Pro 15</li>
+            </ul>
+          </div>
+          <div class="col-sm-4">
+            <h2>Operating Systems:</h2><br>
+            <ul>
+              <li><i class="fab fa-windows"></i>&nbsp;<u>Microsoft Windows:</u> XP, 7, 8, 8.1, 10</li>
+              <li><i class="fab fa-linux"></i>&nbsp;<u>Linux:</u> Ubuntu, Kali</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="hobbies" id="hobbies">
+        <hr class="bookends">
+        <i id="icon" class="far fa-gamepad"></i>
+        <h1><b>Hobbies</b></h1>
+        <ul id="li_hobbies">
+          <li><i class="far fa-gamepad-alt"></i>&nbsp;Playing Multiplayer Games</li>
+          <li><i class="far fa-laptop-code"></i>&nbsp;Coding</li>
+          <li><i class="far fa-bug"></i>&nbsp;Origami</li>
+          <li><i class="far fa-space-shuttle"></i>&nbsp;Space Exploration</li>
+          <li><i class="far fa-browser"></i>&nbsp;Website Developement</li>
+          <li><i class="far fa-music"></i>&nbsp;Listening Music</li>
+        </ul>
+      </section>
+      <section class="contact" id="contact">
+        <hr class="bookends">
+        <i id="icon" class="far fa-id-card-alt"></i>
+        <h1><b>Contact Me</b></h1>
+        <div id="contact_main" class="row no-gutters">
+          <div class="col-md-3"></div>
+          <div class="col-md-3">
+            <i id="icon_contact" class="far fa-phone"></i><br>
+            <h4><u><b>Contact No:</b></u><br> +91 88888888888</h4>
+          </div>
+          <div class="col-md-3">
+            <i id="icon_contact" class="far fa-map-marked-alt"></i><br>
+            <h4><u><b>Location:</b></u><br> Bengaluru, Karnataka, IN</h4>
+          </div>
+          <div class="col-md-3"></div>
+        </div>
+        <div id="contact_main" class="row no-gutters">
+          <div class="col-md-12">
+            <i id="icon_contact" class="far fa-at"></i><br>
+            <h4><u><b>Mail:</b></u><br> apurvakumarg@gmail.com</h4>
+          </div>
+        </div><br>
+        <div class="social">
+          <a href="https://github.com/Luciferx00" target="_blank"><i class="fab fa-github"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/apurva-kumar-gupta-4b640a1b8/" target="_blank"><i class="fab fa-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div><br>
+        <h3><i class="far fa-hashtag"></i>Made By: ~~Apurva Kumar~~</h3><br>
+      </section>
+    </main>
+  </body>
+</html>
