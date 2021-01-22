@@ -1,4 +1,4 @@
-# Firebase POrtfolio
+# Firebase Portfolio
 This project is developed as a project assignment for 30days of Web Development Program.<br>
 This project is based on HTML/CSS/JS/Bootstrap.<br>
 The project is deployed with the help of Firebase and its tools.
